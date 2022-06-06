@@ -1,4 +1,4 @@
-package YotubeDsProblems.src.com.eminds.problem;
+package eminds.daily;
 
 import java.util.Arrays;
 import java.util.Collection;

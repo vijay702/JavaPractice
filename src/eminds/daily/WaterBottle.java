@@ -1,4 +1,4 @@
-package YotubeDsProblems.src;
+package eminds.daily;
 
 import java.util.Scanner;
 
