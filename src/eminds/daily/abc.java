@@ -60,7 +60,7 @@ public class abc{
 
         for (int i=0; i<c.length; i++) {
             Arrays.sort(c, Collections.reverseOrder());
-            System.out.println(c[i] + "");
+            System.out.println(c[i] "");
         }
 
 
