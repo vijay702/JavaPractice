@@ -32,7 +32,7 @@ M             1000*/
     public static void romanToInteger(String s){
 
 
-        Map<Character,Integer> map = new HashMap<>();
+        Map<Character,Integer> map = new HashMap<Character, Integer>();
 
         map.put('I' , 1);
         map.put('V' , 5);
@@ -46,9 +46,12 @@ M             1000*/
 
         for(int i=0; i<s.length();i++){
 
+            if(i>0 && map.get(s.charAt(i)) > map.get(s.charAt(i-1))) {
 
-            result =result+map.get(s.charAt(i));
-
+                result =result+map.get(s.charAt(i)) -2* map.get(s.charAt(i-1));
+            }else {
+                result = result + map.get(s.charAt(i));
+            }
         }
 
         System.out.println(result);
